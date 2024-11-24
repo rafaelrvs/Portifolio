@@ -1,0 +1,109 @@
+.Header{
+    display: flex;
+    align-items: center;
+    background-color:var(--background);
+    justify-content: space-between;
+    color: #FF760F;
+    padding: 15px 25px;
+    flex-wrap: wrap;
+}
+.HeaderBtn{
+    display: flex;
+    gap: 50px;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 15px;
+    margin-right: 35px;
+}
+.h1{
+    flex-direction: column;
+    display: flex;
+    width: 150px;
+    
+}
+.spanH1{
+    margin-left: 50px;
+}
+.menu{
+    display: none;
+}
+.menuLiFecha{
+    display: none;
+}
+
+.lilink{
+    color: #FF760F;
+    transition: 1s;
+    padding: 15px;
+
+}
+.lilink:hover{
+    color: #FF760F;
+scale: 1.1;
+    transition: 1s;
+}
+/*Mobile*/
+@media (max-width:800px) {
+    .Header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .HeaderBtn{
+        margin-top: 50px;
+    }
+}
+@media (max-width:650px) {
+    .Header{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .HeaderBtn{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        height: 40px;
+        padding: 15px;
+    }
+    .HeaderMenuBtn{
+        position: absolute;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+            list-style: none;
+            text-decoration: none;
+            top: 0px;
+            gap: 25px;
+            right: 0px;
+            width: 150px;
+            height: 250px;
+            padding: 10px;
+            background-color: var(--background);
+            animation: forwards moveDown 1500ms;
+            border-radius: 5px;
+            
+        }
+        .liMenu{
+            background-color: #FF760F;
+            padding: 10px;
+            color: #fff;
+            border-radius: 5px;
+        }
+    }
+    @keyframes moveDown {
+        0%{
+            top: 0px;
+        }
+        100%{
+            top: 100px;
+            height: 350px;
+          
+        }
+        
+    }
+
+  
