@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 35px;
-    height:100vh;
+    height: 100vh;
     flex-wrap: wrap;
 }
 
@@ -19,12 +19,12 @@
     padding: 15px 15px;
 }
 
-.lastName {
+.lastName,
+.textBoasVindas {
     color: #fff;
 }
 
 .textBoasVindas {
-    color: #fff;
     width: 600px;
     padding: 15px 35px;
 }
@@ -39,22 +39,17 @@
     overflow: hidden;
     border-radius: 50%;
     border: #FF760F 3px solid;
-    animation: infinite treme 5000ms ease;
     margin-right: 50px;
-    transition: 500ms ease;
+    transition: transform 500ms ease, border 500ms ease;
 }
 
 .imgAzul {
-    animation: infinite treme 5000ms ease;
     height: 450px;
 }
 
 .containerImg:hover {
     border: rgb(107, 235, 107) 3px solid;
-    scale: 1.1;
-    transition: 500ms ease;
-
-
+    transform: scale(1.1);
 }
 
 .subParagrafo {
@@ -64,61 +59,25 @@
     gap: 25px;
 }
 
-@keyframes treme {
-    0% {
-        transform: translateY(0px);
-        transform: translateX(0px);
-    }
-
-    50% {
-
-        transform: translateY(-35px);
-        transform: translateX(-25px);
-    }
-
-    100% {
-        transform: translateY(0px);
-        transform: translateX(0px);
-
-    }
-
-}
-
-
-@media (max-width:1000px) {
-    .paragrafo1 {
-        width: 450px;
-    }
-
-    .subParagrafo {
+@media (max-width: 1000px) {
+    .paragrafo1, .subParagrafo, .textBoasVindas {
         width: 450px;
     }
 
     .textBoasVindas {
         font-size: 1rem;
-
-        width: 450px;
     }
-
-
 }
 
-@media (max-width:750px) {
-    .paragrafo1 {
-        width: 350px;
-    }
-
-    .subParagrafo {
+@media (max-width: 750px) {
+    .paragrafo1, .subParagrafo {
         width: 350px;
     }
 
     .textBoasVindas {
         font-size: 0.9rem;
-
         width: 300px;
     }
-
-
 }
 
 .containerBtnHome {
@@ -127,49 +86,44 @@
     gap: 25px;
 }
 
-.BaixarCV:hover {
-    scale: 1.09;
-    transition: 0.3 s;
-    background-color: #f8ae75;
+.BaixarCV, .MeusProjetos {
+    transition: 0.3s;
+    width: 150px;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 35px;
+    color: #fff;
 }
 
 .BaixarCV {
-    transition: 0.3s;
-    width: 150px;
-    border: none;
     background-color: #FF760F;
-    border-radius: 15px;
-    padding: 15px 35px;
-    color: #fff;
 }
 
+.BaixarCV:hover {
+    transform: scale(1.09);
+    background-color: #f8ae75;
+}
 
 .MeusProjetos {
-    transition: 0.3s;
-    width: 150px;
-    border: none;
     background-color: #5a5552;
-    border-radius: 15px;
-    padding: 15px 35px;
-    color: #fff;
-
 }
 
 .MeusProjetos:hover {
-    scale: 1.09;
-    transition: 0.3s;
+    transform: scale(1.09);
     background-color: #3b3835;
 }
 
-
-.paragrafo1::after{
+.paragrafo1::after,
+.paragrafo2::after,
+.paragrafo3::after 
+.paragrafo4::after {
     content: " ";
-    height: 1px;
+    height: 0.5px;
     width: 100%;
+    box-shadow: 1px 1px 15px #FF760F;
     background: #FF760F;
+    margin-top: 25px;
 }
-
-/*Paragrafo 2*/
 
 .paragrafo2 {
     display: flex;
@@ -178,15 +132,14 @@
     justify-content: space-between;
     align-items: start;
     padding: 15px 35px;
-
-
 }
-.contentParagrafo2{
+
+.contentParagrafo2 {
     display: flex;   
     justify-content: space-between;
     width: 100%;
-    
 }
+
 .containerImgParagrafo2 {
     display: flex;
     gap: 25px;
@@ -196,34 +149,31 @@
     height: 250px;
     overflow: hidden;
     border-radius: 25px;
-    transition: 1s;
+    transition: border 1s;
 }
 
 .containerImgParagrafo2:hover {
     border-left: 10px solid rgb(107, 235, 107);
     border-top: 10px solid rgb(107, 235, 107);
-
-    transition: 1s;
 }
 
 .blusaAmarela {
     border-radius: 25px;
     height: 450px;
-
 }
 
 .textParagrafo2 {
-    display: grid;
     color: #fff;
     width: 450px;
     padding: 25px;
 }
 
 .titleParagrafo2 {
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
     font-size: 1.5rem;
-    display: grid;
     color: #FF760F;
-
 }
 
 .titleParagrafo2::after {
@@ -233,102 +183,270 @@
     background-color: #FF760F;
 }
 
-
-.paragrafo2::after{
-    content: " ";
-    height: 1px;
-    width: 100%;
-    background: #FF760F;
-}
-
-
-/*Paragrafo 3*/
-
-
-.paragrafo3{
+.paragrafo3 {
     display: flex;
+    justify-content: center;
     padding: 35px;
     flex-direction: column;
     height: 100vh;
 }
-.containerContentParagrafo3{
+
+.containerContentParagrafo3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
-.h1text3{
-    display: grid;
+
+.h1text3 {
     color: #FF760F;
     font-size: 1.5rem;
 }
-.h1text3sub{
+
+.h1text3sub {
     margin-bottom: 15px;
     color: #fff;
     font-size: 1.1rem;
 }
-.contentTextParagrafo3{
+
+.contentTextParagrafo3 {
     color: #fff;
     width: 450px;
 }
-.containerImgHack{
-    margin-right: -150px;
+
+
+
+
+
+.containerImgHack:hover {
+    border: 5px solid rgb(107, 235, 107);
+    animation: slideOn 1000ms ease-in-out;
+}
+
+.imagemHackathon {
+    height: 100%;
+    width: 100%;
+}
+
+/* Definindo as animações keyframes para o efeito suave */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideOn {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+.paragrafoAnimado {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.paragrafoAnimado.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.containerImgHack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -10px;
+    overflow: hidden;
+    height: 350px;
+    width: 550px;
     border: #FF760F 5px solid;
     border-radius: 15px;
-    transition: 1s;
+    transition: opacity 500ms ease-in-out, transform 1s ease-in-out;
+    opacity: 0;
+    transform: translateX(50%);
 }
 
-.containerImgHack:hover{
-    border: 5px solid  rgb(107, 235, 107);
-    transition: 1s;
+.containerImgHackAtivo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -10px;
+    overflow: hidden;
+    height: 350px;
+    width: 550px;
+    border: #FF760F 5px solid;
+    border-radius: 15px;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/*Paragrafo4*/
+.paragrafo4{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    justify-content: start;
+    height: 80vh;
+}
+.titleParagrafo{
+    color: #fff;
+}
+.containerHabilidades{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.front,.back, .banco{
+    height: 150px;
+    width: 350px;
+    color: #fff;
+    padding:15px ;
+    background-color: #2B2A2A;
+    border-radius: 5px;
+}
+.titleContainer{
+    background-color: #2B2A2A;
+    text-align: center;
+}
+.contentContainerHabilidade{   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 25px;
+    background-color: #2B2A2A;
     
 }
-
-.imgParagrafo{
-    border-radius: 15px;
-
+.front, .back, .banco {
+    margin-top: 25px;
+    position: relative; /* Necessário para posicionar o ::after em relação ao elemento pai */
+    transition: 1s;
 }
 
-.paragrafo3:after{
-    margin-top: 150px;
+.front::after, .back::after, .banco::after {
     content: " ";
-    height: 1px;
+    height: 15px;
     width: 100%;
-    background: #FF760F;
+    background-color:#FF760F;
+    display: block; /* Certifica-se de que o pseudo-elemento seja visível */
+    border-radius: 0 0 5px 5px;
+    position: absolute; 
+    bottom:  0px; 
+    left: 0px; 
+}
+
+.front:hover, .back:hover, .banco:hover {
+    scale: 1.05;
+    transition: 1s;
+}
+.containerCircle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #FF760F;
+}
+
+/* Parágrafo 5 Correção - Timeline conforme nova imagem */
+.paragrafo5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    color: #fff;
+    height: auto;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+.containerMainCircle {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 0; /* Remova o padding inferior para manter os círculos mais próximos */
+}
+
+.containerCircle {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    background-color: #ff760f;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.containerCircle::after {
+    position: absolute;
+    content: "";
+    height: calc(100% + 30px); /* Ajuste para conectar melhor ao próximo círculo */
+    width: 5px;
+    background-color: #ff760f;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1; /* Coloque atrás para evitar sobreposição do conteúdo */
+}
+
+.ContentEducacao {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.ContentEducacao strong {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.ContentEducacao h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.ContentEducacao span {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #b0b0b0;
+}
+
+/* Removendo a linha inferior do último item da timeline */
+.containerMainCircle:last-child .containerCircle::after {
+    display: none;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 750px) {
+    .paragrafo5 {
+        height: auto;
+    }
+    .containerMainCircle {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .containerCircle::after {
+        left: 20px;
+    }
 }
 
 
-
-/* Classe para a animação de entrada da direita para a esquerda */
-.slideIn {
-    animation: slideIn 1s ease-in-out forwards;
-  }
-  
-  /* Classe para a animação de saída da direita para a esquerda */
-  .slideOut {
-    animation: slideOut 1s ease-in-out forwards;
-  }
-  
-  /* Definindo as animações keyframes para o efeito suave */
-  @keyframes slideIn {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes slideOut {
-    0% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-  }
-  
+.paragrafo6{
+    height: 100vh;
+}

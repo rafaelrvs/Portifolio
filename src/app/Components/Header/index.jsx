@@ -37,6 +37,16 @@ const Header = () => {
                         Sobre mim
                     </a>
                 </li>
+
+                <li className={styles.li}>
+                    <a
+                        className={styles.lilink}
+                        href="#eventos"
+                        onClick={(e) => scrollToSection(e, '#eventos')}
+                    >
+                        Eventos
+                    </a>
+                </li>
                 <li className={styles.li}>
                     <a
                         className={styles.lilink}
@@ -64,6 +74,7 @@ const Header = () => {
                         Contatos
                     </a>
                 </li>
+            
                 <li className={menuBtn ? styles.liMenu : styles.menuLiFecha} onClick={() => setMenuBtn(!menuBtn)}>
                     Fechar menu
                 </li>
