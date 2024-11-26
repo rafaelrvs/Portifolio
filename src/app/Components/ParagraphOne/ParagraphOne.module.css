@@ -12,7 +12,17 @@
 .titleMain {
     display: flex;
     color: #FF760F;
-    padding: 15px 15px;
+    font-size:2rem;
+    position: relative;
+
+}
+.titleMain::after{
+    bottom:-7px ;
+    position: absolute;
+    content: " ";
+    height: 5px;
+    width: 200px;
+    background-color: #FF760F;
 }
 
 .lastName,
@@ -21,8 +31,9 @@
 }
 
 .textBoasVindas {
-    width: 600px;
-    padding: 15px 35px;
+    width: 700px;
+  font-size: 1.3rem;
+    padding: 0px 35px;
 }
 
 .containerImg {
@@ -30,7 +41,7 @@
     align-items: start;
     justify-content: center;
     height: 200px;
-    width: 200px;
+    width: 20px;
     min-width: 200px;
     overflow: hidden;
     border-radius: 50%;
@@ -50,29 +61,28 @@
 
 .subParagrafo {
     display: flex;
+
     flex-direction: column;
     justify-content: center;
-    gap: 25px;
+    gap: 15px;
 }
 
 @media (max-width: 1000px) {
     .paragrafo1, .subParagrafo, .textBoasVindas {
-        width: 450px;
+     text-align: text;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    }
+    .containerImg{
+        margin-top: 50px;
     }
 
     .textBoasVindas {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
-}
-
-@media (max-width: 750px) {
-    .paragrafo1, .subParagrafo {
-        width: 350px;
-    }
-
-    .textBoasVindas {
-        font-size: 0.9rem;
-        width: 300px;
+    .titleMain{
+        align-self: center;
     }
 }
 

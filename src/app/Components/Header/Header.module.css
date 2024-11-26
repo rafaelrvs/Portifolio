@@ -19,6 +19,7 @@
     flex-direction: column;
     display: flex;
     width: 150px;
+    z-index: 999;
     
 }
 .spanH1{
@@ -43,24 +44,17 @@ scale: 1.1;
     transition: 1s;
 }
 /*Mobile*/
-@media (max-width:800px) {
-    .Header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .HeaderBtn{
-        margin-top: 50px;
-    }
-}
-@media (max-width:650px) {
+
+@media (max-width:1080px) {
     .Header{
         display: flex;
         justify-content: space-between;
         position: relative;
+        padding: 25px;
+
     }
     .HeaderBtn{
+        background-color: red;
         display: none;
     }
     .menu{

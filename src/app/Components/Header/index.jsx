@@ -68,6 +68,15 @@ const Header = () => {
                 <li className={styles.li}>
                     <a
                         className={styles.lilink}
+                        href="#projetos"
+                        onClick={(e) => scrollToSection(e, '#projetos')}
+                    >
+                        Projetos
+                    </a>
+                </li>
+                <li className={styles.li}>
+                    <a
+                        className={styles.lilink}
                         href="#contatos"
                         onClick={(e) => scrollToSection(e, '#contatos')}
                     >

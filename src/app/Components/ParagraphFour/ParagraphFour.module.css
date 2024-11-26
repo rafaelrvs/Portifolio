@@ -64,3 +64,9 @@
     border-radius: 50%;
     background-color: #FF760F;
 }
+@media (max-width:1230px) {
+    .containerHabilidades{
+        display: flex;
+        flex-direction: column;
+    }
+}

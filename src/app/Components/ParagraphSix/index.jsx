@@ -4,7 +4,7 @@ import Link from 'next/link'
 const ParagraphSix = () => {
   return (
 
-    <div className={styles.paragrafo6}>
+    <div className={styles.paragrafo6} id='projetos'>
       <h1 className={styles.titleParagrafo6}>Meus Projetos</h1>
       <div className={styles.main}>
 

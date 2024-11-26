@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
 color: #fff;
-    height: 100vh;
+   
 }
 .main{
     font-size: 1.3rem;
@@ -81,4 +81,14 @@ color: #fff;
     text-decoration: none;
     color: #fff;
     border-radius: 5px;
+}
+@media (max-width:1200px) {
+ 
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .btnConsulta{
+        width: 300px;
+    }
 }
