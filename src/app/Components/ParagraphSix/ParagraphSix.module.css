@@ -1,0 +1,84 @@
+.paragrafo6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+color: #fff;
+    height: 100vh;
+}
+.main{
+    font-size: 1.3rem;
+    display: flex;
+   justify-content: space-around;
+   width: 100%; 
+   margin-top: 25px;
+}
+.contentProject{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    gap: 15px;
+}
+.containerProject {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    transition: 0.3s;
+    scale: 1; /* Definição inicial */
+}
+
+.containerProject:hover {
+    scale: 1.1; /* Aumenta levemente o container ao passar o mouse */
+}
+
+.containerProject::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #FF760F,#0000, #FF760F);
+    background-size: 300% 300%;
+    z-index: -1; /* Coloca a borda atrás do conteúdo */
+    animation: animateBorder 6s linear infinite;
+}
+
+@keyframes animateBorder {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.imgProjetos{
+
+    width: 250px;
+    height: 250px;
+}
+.Descricao{
+    padding: 15px;
+    width: 290px;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+.btnConsulta{
+    background-color: #FF760F;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}

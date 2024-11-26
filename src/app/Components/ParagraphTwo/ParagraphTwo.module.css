@@ -1,0 +1,58 @@
+
+.paragrafo2 {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-between;
+    align-items: start;
+    padding: 15px 35px;
+}
+
+.contentParagrafo2 {
+    display: flex;   
+    justify-content: space-between;
+    width: 100%;
+}
+
+.containerImgParagrafo2 {
+    display: flex;
+    gap: 25px;
+    align-self: start;
+    border-left: 10px solid #FF760F;
+    border-top: 10px solid #FF760F;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 25px;
+    transition: border 1s;
+}
+
+.containerImgParagrafo2:hover {
+    border-left: 10px solid rgb(107, 235, 107);
+    border-top: 10px solid rgb(107, 235, 107);
+}
+
+.blusaAmarela {
+    border-radius: 25px;
+    height: 450px;
+}
+
+.textParagrafo2 {
+    color: #fff;
+    width: 450px;
+    padding: 25px;
+}
+
+.titleParagrafo2 {
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+    font-size: 1.5rem;
+    color: #FF760F;
+}
+
+.titleParagrafo2::after {
+    content: " ";
+    height: 5px;
+    width: 105px;
+    background-color: #FF760F;
+}

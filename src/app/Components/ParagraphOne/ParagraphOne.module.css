@@ -1,0 +1,110 @@
+
+.paragrafo1 {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.titleMain {
+    display: flex;
+    color: #FF760F;
+    padding: 15px 15px;
+}
+
+.lastName,
+.textBoasVindas {
+    color: #fff;
+}
+
+.textBoasVindas {
+    width: 600px;
+    padding: 15px 35px;
+}
+
+.containerImg {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    min-width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: #FF760F 3px solid;
+    margin-right: 50px;
+    transition: transform 500ms ease, border 500ms ease;
+}
+
+.imgAzul {
+    height: 450px;
+}
+
+.containerImg:hover {
+    border: rgb(107, 235, 107) 3px solid;
+    transform: scale(1.1);
+}
+
+.subParagrafo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+@media (max-width: 1000px) {
+    .paragrafo1, .subParagrafo, .textBoasVindas {
+        width: 450px;
+    }
+
+    .textBoasVindas {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .paragrafo1, .subParagrafo {
+        width: 350px;
+    }
+
+    .textBoasVindas {
+        font-size: 0.9rem;
+        width: 300px;
+    }
+}
+
+.containerBtnHome {
+    display: flex;
+    padding: 0 35px;
+    gap: 25px;
+}
+
+.BaixarCV, .MeusProjetos {
+    transition: 0.3s;
+    width: 150px;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 35px;
+    color: #fff;
+}
+
+.BaixarCV {
+    background-color: #FF760F;
+}
+
+.BaixarCV:hover {
+    transform: scale(1.09);
+    background-color: #f8ae75;
+}
+
+.MeusProjetos {
+    background-color: #5a5552;
+}
+
+.MeusProjetos:hover {
+    transform: scale(1.09);
+    background-color: #3b3835;
+}

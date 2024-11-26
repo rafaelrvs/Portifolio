@@ -1,0 +1,66 @@
+
+/*Paragrafo4*/
+.paragrafo4{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    justify-content: start;
+    height: 80vh;
+}
+.titleParagrafo{
+    color: #fff;
+}
+.containerHabilidades{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.front,.back, .banco{
+    height: 150px;
+    width: 350px;
+    color: #fff;
+    padding:15px ;
+    background-color: #2B2A2A;
+    border-radius: 5px;
+}
+.titleContainer{
+    background-color: #2B2A2A;
+    text-align: center;
+}
+.contentContainerHabilidade{   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 25px;
+    background-color: #2B2A2A;
+    
+}
+.front, .back, .banco {
+    margin-top: 25px;
+    position: relative; /* Necessário para posicionar o ::after em relação ao elemento pai */
+    transition: 1s;
+}
+
+.front::after, .back::after, .banco::after {
+    content: " ";
+    height: 15px;
+    width: 100%;
+    background-color:#FF760F;
+    display: block; /* Certifica-se de que o pseudo-elemento seja visível */
+    border-radius: 0 0 5px 5px;
+    position: absolute; 
+    bottom:  0px; 
+    left: 0px; 
+}
+
+.front:hover, .back:hover, .banco:hover {
+    scale: 1.05;
+    transition: 1s;
+}
+.containerCircle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #FF760F;
+}

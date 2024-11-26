@@ -1,0 +1,107 @@
+
+.paragrafo3 {
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.containerContentParagrafo3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1text3 {
+    color: #FF760F;
+    font-size: 1.5rem;
+}
+
+.h1text3sub {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.contentTextParagrafo3 {
+    color: #fff;
+    width: 450px;
+}
+
+
+
+
+
+.containerImgHack:hover {
+    border: 5px solid rgb(107, 235, 107);
+    animation: slideOn 1000ms ease-in-out;
+}
+
+.imagemHackathon {
+    height: 100%;
+    width: 100%;
+}
+
+/* Definindo as animações keyframes para o efeito suave */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideOn {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+.paragrafoAnimado {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.paragrafoAnimado.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.containerImgHack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -10px;
+    overflow: hidden;
+    height: 350px;
+    width: 550px;
+    border: #FF760F 5px solid;
+    border-radius: 15px;
+    transition: opacity 500ms ease-in-out, transform 1s ease-in-out;
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+.containerImgHackAtivo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -10px;
+    overflow: hidden;
+    height: 350px;
+    width: 550px;
+    border: #FF760F 5px solid;
+    border-radius: 15px;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    opacity: 1;
+    transform: translateX(0);
+}
+
