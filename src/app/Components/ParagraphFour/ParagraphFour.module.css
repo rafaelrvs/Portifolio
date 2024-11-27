@@ -18,12 +18,13 @@
 }
 .front,.back, .banco{
     height: 150px;
-    width: 350px;
+    width: 300px;
     color: #fff;
     padding:15px ;
     background-color: #2B2A2A;
     border-radius: 5px;
 }
+
 .titleContainer{
     background-color: #2B2A2A;
     text-align: center;

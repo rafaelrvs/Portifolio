@@ -1,120 +1,130 @@
-
-.paragrafo1 {
-    display: flex;
-    margin-top: 25px;
-    justify-content: space-between;
-    align-items: center;
+.paragrafo1{
     padding: 35px;
-    height: 100vh;
-    flex-wrap: wrap;
+   
 }
+.contentParagrafo1
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 
-.titleMain {
+}
+.content{
     display: flex;
+    flex-direction: column;
+}
+.titleMain{
+    font-size: 25pt;
+    padding: 15px;
     color: #FF760F;
-    font-size:2rem;
-    position: relative;
-
 }
-.titleMain::after{
-    bottom:-7px ;
-    position: absolute;
-    content: " ";
-    height: 5px;
-    width: 200px;
-    background-color: #FF760F;
-}
-
-.lastName,
-.textBoasVindas {
+.textBoasVindas{
+    padding: 15px;
+    width: 800px;
+    text-align: justify;
+    font-size: 20pt;
     color: #fff;
 }
 
-.textBoasVindas {
-    width: 700px;
-  font-size: 1.3rem;
-    padding: 0px 35px;
+
+.textBoasVindas.show {
+    opacity: 0;
 }
 
-.containerImg {
+.textBoasVindas.hide {
+  opacity: 1;
+}
+
+
+
+.containerBtnHome{
+    padding: 15px;
     display: flex;
-    align-items: start;
-    justify-content: center;
-    height: 200px;
-    width: 20px;
-    min-width: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: #FF760F 3px solid;
-    margin-right: 50px;
-    transition: transform 500ms ease, border 500ms ease;
+    gap: 25px;
+
 }
 
-.imgAzul {
+
+.BaixarCV{
+    background-color: #FF760F;
+    color: #fff;
+    min-width: 250px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15pt;
+ 
+}
+.MeusProjetos{
+    background-color:#eee;
+    color: rgb(32, 31, 31);
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15pt;
+    width: 200px;
+    text-align: center;
+
+}
+
+.MeusProjetos:hover{
+    background-color:#eec5a5;
+}
+.containerImg{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+    min-height: 250px;
+    min-width: 250px;
+    border: 3px solid #FF760F;
+    border-radius: 50%;
+}
+.imgAzul{
     height: 450px;
 }
-
-.containerImg:hover {
-    border: rgb(107, 235, 107) 3px solid;
-    transform: scale(1.1);
+.containerImg:hover{
+    border: 2px solid rgb(194, 235, 134);
 }
 
-.subParagrafo {
-    display: flex;
+@media (max-width:1250px) {
 
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
+.textBoasVindas{
+    width: 500px;
+    text-align: start;
 }
 
-@media (max-width: 1000px) {
-    .paragrafo1, .subParagrafo, .textBoasVindas {
-     text-align: text;
+}
+@media (max-width:900px) {
+.contentParagrafo1{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-right: 35px;
+}
+.textBoasVindas{
     width: 100%;
-    }
-    .containerImg{
-        margin-top: 50px;
-    }
+}
+.containerImg{
+    margin-top: 35px;
+}
 
-    .textBoasVindas {
-        font-size: 1.5rem;
-    }
+}
+
+@media (max-width:565px) {
     .titleMain{
-        align-self: center;
+        text-align: center;
+        font-size: 20pt;
     }
-}
-
-.containerBtnHome {
+    .textBoasVindas{
+        text-align:center ;
+        font-size: 15pt;
+    }
+ .containerBtnHome{
+    justify-content: center;
+    align-items: center;
     display: flex;
-    padding: 0 35px;
-    gap: 25px;
-}
-
-.BaixarCV, .MeusProjetos {
-    transition: 0.3s;
-    width: 150px;
-    border: none;
-    border-radius: 15px;
-    padding: 15px 35px;
-    color: #fff;
-}
-
-.BaixarCV {
-    background-color: #FF760F;
-}
-
-.BaixarCV:hover {
-    transform: scale(1.09);
-    background-color: #f8ae75;
-}
-
-.MeusProjetos {
-    background-color: #5a5552;
-}
-
-.MeusProjetos:hover {
-    transform: scale(1.09);
-    background-color: #3b3835;
+    flex-direction: column;
+ }
 }
